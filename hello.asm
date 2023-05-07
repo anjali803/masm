@@ -1,0 +1,11 @@
+/*A simple masm program to print HELLO to the console*/
+
+ASSUME CS:CODE,DS:DATA
+DATA SEGMENT
+MSG DB "HELLO:$"
+DATA ENDS
+CODE SEGMENT
+START:MOV AX,DATA
+      MOV DS,AX
+CODE ENDS
+END START
